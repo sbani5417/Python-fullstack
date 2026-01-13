@@ -1,0 +1,11 @@
+def print_primes(start,end):
+  for num in range(start,end+1):
+      if num>1:
+        for i in range(2,int(num**0.5)+1):
+            if num%i==0:
+                break
+            else:
+                print(num)
+start=int(input("enter the start of the range:"))
+end=int(input("enter the end of the range:"))
+print_primes(start,end)
