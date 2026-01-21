@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTP-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Employee Management Dashboard</title>
+        <link rel="stylesheet" href="frontend.css">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Employee Management Dashboard</h1>
+            <form id="employee-form">
+                <label for="employee-id">Employee ID:</label>
+                <input type="text" id="employee-id" required>
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+                <label for="department">Department:</label>
+                <input type="text" id="department" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" required>
+                <label for="salary">Salary:</label>
+                <input type="number" id="salary" required>
+                <button type="submit">Add Employee</button>
+            </form>
+            <table id="employee-table">
+                <thead>
+                    <tr>
+                        <th>S.No</th>
+                        <th>Employee</th>
+                        <th>Name</th>
+                        <th>Department</th>
+                        <th>Email</th>
+                        <th>Salary</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="employee-list"></tbody>
+            </table>
+        </div>
+        <script src="frontend1.js"></script>
+    </body>
+</html>
